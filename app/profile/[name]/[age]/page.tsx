@@ -1,3 +1,5 @@
+import NoUser from "@/components/NoUser";
+
 
 type ageParams = {
     params: Promise<{name : string, age: number }>;
@@ -76,19 +78,8 @@ export default async function agePage({params}: ageParams) {
 
 
     if (!user) {
-        return (
-            <div className="flex flex-col items-center justify-center min-h-[400px] p-6 text-center max-w-md my-8 bg-gray-900 border border-dashed border-zinc-800 rounded-xl">
-                <h1 className="text-xl font-bold text-zinc-100 mb-2">
-                    No user found...
-                </h1>
-                <p className="text-sm text-zinc-400">
-                    User with &quot;
-                    <span className="font-medium text-zinc-200">
-                        {username}
-                    </span>
-                    &quot; username doesn&apos;t exist.
-                </p>
-            </div>
+        return(
+            <NoUser username={username}/>
         );
     }
 

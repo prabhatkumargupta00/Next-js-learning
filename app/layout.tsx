@@ -42,6 +42,9 @@ export default function RootLayout({
                     <Link className="text-2xl" href="/contact">
                         contact
                     </Link>
+                    <Link className="text-2xl" href="/profile/prabhat/15">
+                        Profile (prabhat)
+                    </Link>
                 </nav>
                 {children}
             </body>
