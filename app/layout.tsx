@@ -28,7 +28,7 @@ export default function RootLayout({
             lang="en"
             className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
         >
-            <body className="min-h-full m-4  flex flex-col">
+            <body className="h-[calc(100vh - 2rem)]  m-4 flex flex-col">
                 <nav className="gap-6 flex p-8 rounded-4xl bg-gray-900 ">
                     <Link className="text-2xl" href="/">
                         home
